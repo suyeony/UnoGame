@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc4de1fe-3ccd-4928-9c36-845a6d65c33a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/UnoGame.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Rule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Rule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SpecialCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpecialCard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
