@@ -1,7 +1,7 @@
 public class Player {
-    static String name;
-    static Deck deck;
-    static boolean turn;
+    private static String name;
+    private static Deck deck;
+    private static boolean turn;
 
     Player(String name, Deck deck) {
         this.name = name;
