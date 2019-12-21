@@ -1,11 +1,11 @@
 public class SpecialCard extends Card {
- private static Rule rule;
+ private static Actions actions;
 
-    public static void setRule(Rule rule) {
-        SpecialCard.rule = rule;
+    public static void setActions(Actions actions) {
+        SpecialCard.actions = actions;
     }
 
-    public static Rule getRule() {
-        return rule;
+    public static Actions getActions() {
+        return actions;
     }
 }

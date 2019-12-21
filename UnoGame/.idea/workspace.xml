@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc4de1fe-3ccd-4928-9c36-845a6d65c33a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Rule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Rule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Actions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Rule.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SpecialCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpecialCard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +61,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="402" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1576898172265">
+      <screen x="0" y="23" width="1280" height="716" />
+    </state>
+    <state x="402" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.716@0.23.1280.716" timestamp="1576898172265" />
     <state x="319" y="214" key="com.intellij.ide.util.TipDialog" timestamp="1576894829242">
       <screen x="0" y="23" width="1280" height="721" />
     </state>
