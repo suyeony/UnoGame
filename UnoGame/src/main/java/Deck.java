@@ -2,8 +2,8 @@ import java.util.*;
 
 public class Deck {
     private List<Card> cards;
-    private final int quantityCards = 76;
-    private final int quantitySpecialCards = 32;
+//    private final int quantityCards = 76;
+//    private final int quantitySpecialCards = 32;
     private final Map<Integer, String> colors =
             Map.of(1, "red", 2, "blue", 3, "green", 4, "yellow");
 
