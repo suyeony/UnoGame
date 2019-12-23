@@ -4,24 +4,36 @@ public class Deck {
     private List<Card> cards;
     private final int quantityCards = 76;
     private final int quantitySpecialCards = 32;
+    private final Map<Integer, String> colors =
+            Map.of(1, "red", 2, "blue", 3, "green", 4, "yellow");
 
     Deck() {
         cards = new ArrayList<>();
-        MakingCards(cards, "red", 0, 19);
-        MakingCards(cards, "blue", 19, 38);
-        MakingCards(cards, "green", 38, 57);
-        MakingCards(cards, "yellow", 57, 76);
+        for (String color : colors.values()) {
+            MakingCards(cards, color);
+        }
+//        MakingSpecialCards(cards, "red", Actions.ADD_TWO, "+2");
+//        MakingSpecialCards(cards, "blue", Actions.ADD_TWO, "+2");
+//        MakingSpecialCards(cards, "green", Actions.ADD_TWO, "+2");
+//        MakingSpecialCards(cards, "red", Actions.ADD_TWO, "+2");
     }
 
-    private void MakingCards(List<Card> cards, String color, int index, int x) {
+    private void MakingCards(List<Card> cards, String color) {
         var y = 0;
-        for (; index < x; index++, y++) {
+        for (int index = 0; index < 19; index++, y++) {
             var card = new Card(y + "", color);
-            cards.add(index, card);
+            cards.add(card);
             if (y == 9) {
                 y = 0;
             }
         }
+    }
+
+    private void MakingSpecialCards(List<Card> cards, String color, Actions action, String value) {
+        var specialCard = new SpecialCard();
+        specialCard.setColor(color); // 8 none 24 color, 6blue, 6green, 6yellow, 6red
+        specialCard.setValue("+2"); // +2, wild, +4, reverse, skip   24 + 8
+        specialCard.setActions(Actions.ADD_FOUR);
     }
 
     public List<Card> ShowCards() {
