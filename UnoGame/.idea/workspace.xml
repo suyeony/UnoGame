@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc4de1fe-3ccd-4928-9c36-845a6d65c33a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Actions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Rule.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpecialCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpecialCard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +30,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -65,10 +63,15 @@
       <screen x="0" y="23" width="1280" height="716" />
     </state>
     <state x="402" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.716@0.23.1280.716" timestamp="1576898172265" />
-    <state x="319" y="214" key="com.intellij.ide.util.TipDialog" timestamp="1576894829242">
-      <screen x="0" y="23" width="1280" height="721" />
+    <state x="149" y="24" key="SettingsEditor" timestamp="1576899999352">
+      <screen x="0" y="23" width="1280" height="723" />
+    </state>
+    <state x="149" y="24" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1576899999352" />
+    <state x="319" y="215" key="com.intellij.ide.util.TipDialog" timestamp="1576903704918">
+      <screen x="0" y="23" width="1280" height="724" />
     </state>
     <state x="319" y="212" key="com.intellij.ide.util.TipDialog/0.23.1280.713@0.23.1280.713" timestamp="1576893473093" />
     <state x="319" y="214" key="com.intellij.ide.util.TipDialog/0.23.1280.721@0.23.1280.721" timestamp="1576894829242" />
+    <state x="319" y="215" key="com.intellij.ide.util.TipDialog/0.23.1280.724@0.23.1280.724" timestamp="1576903704918" />
   </component>
 </project>
