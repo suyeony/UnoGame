@@ -6,25 +6,22 @@ public class Deck {
     private final int quantitySpecialCards = 32;
 
     Deck() {
-        cards = new ArrayList<Card>();
-        MakingCards(cards, "red");
-//        MakingCards(cards, "blue");
-//        MakingCards(cards, "green");
-//        MakingCards(cards, "yellow");
+        cards = new ArrayList<>();
+        MakingCards(cards, "red", 0, 19);
+        MakingCards(cards, "blue", 19, 38);
+        MakingCards(cards, "green", 38, 57);
+        MakingCards(cards, "yellow", 57, 76);
     }
 
-    private List<Card> MakingCards(List<Card> cards, String color) {
-        int y = 0;
-        for (int i = 0; i < 19; i++, y++) {
-            Card card = new Card();
-            card.setColor(color);
-            card.setValue(y + "");
-            cards.add(i, card);
+    private void MakingCards(List<Card> cards, String color, int index, int x) {
+        var y = 0;
+        for (; index < x; index++, y++) {
+            var card = new Card(y + "", color);
+            cards.add(index, card);
             if (y == 9) {
                 y = 0;
             }
         }
-        return cards;
     }
 
     public List<Card> ShowCards() {

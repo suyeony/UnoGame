@@ -1,6 +1,6 @@
 public class Card {
-    private static String value;
-    private static String color;
+    private  String value;
+    private  String color;
 
     Card(){
     }
