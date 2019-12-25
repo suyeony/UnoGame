@@ -1,9 +1,6 @@
 import java.util.*;
 
 public class Deck {
-    private List<Card> cards;
-    //    private final int quantityCards = 76;
-//    private final int quantitySpecialCards = 32;
     private final Map<Integer, String> colors =
             Map.of(1, "red", 2, "blue", 3, "green", 4, "yellow");
 
@@ -11,12 +8,13 @@ public class Deck {
         cards = new ArrayList<>();
         for (String color : colors.values()) {
             MakingCards(cards, color);
-            MakingSpecialCards(cards, color, Actions.ADD_TWO, "+2",2);
-            MakingSpecialCards(cards, color, Actions.SKIP_TURN, "Skip",2);
-            MakingSpecialCards(cards, color, Actions.REVERSE, "reverse",2);
+
+            MakingSpecialCards(cards, color, Actions.ADD_TWO, "+2", 2);
+            MakingSpecialCards(cards, color, Actions.SKIP_TURN, "Skip", 2);
+            MakingSpecialCards(cards, color, Actions.REVERSE, "reverse", 2);
         }
-        MakingSpecialCards(cards,"none",Actions.CHOOSE_COLOR,"wild",4);
-        MakingSpecialCards(cards,"none",Actions.ADD_FOUR,"+4",4);
+        MakingSpecialCards(cards, "none", Actions.CHOOSE_COLOR, "wild", 4);
+        MakingSpecialCards(cards, "none", Actions.ADD_FOUR, "+4", 4);
     }
 
     private void MakingCards(List<Card> cards, String color) {
@@ -43,21 +41,38 @@ public class Deck {
     public List<Card> ShowCards() {
         return cards;
     }
-//
-//    public drawCard() {
-//
-//    }
-//
-//    public mixCard() {
-//
-//    }
-//
-//    public giveCard() {
-//
-//    }
-//
-//    public startCard() {
-//
-//    }
+
+
+    public void DrawCard(List<Card> playerCard) {
+        playerCard.add(cards.get(0));
+        cards.remove(0);
+    }
+
+    public void mixCard(List<Card> cards) {
+        Random random = new Random();
+        for (int i = 0; i < 108; i++) {
+            int newIndex = i + random.nextInt(108 - i);
+            //switching
+            Card card = new Card();
+            card.setColor(cards.get(i).getColor());
+            card.setValue(cards.get(i).getValue());
+            cards.get(i).setValue(cards.get(newIndex).getValue());
+            cards.get(i).setColor(cards.get(newIndex).getColor());
+            cards.get(newIndex).setColor(card.getColor());
+            cards.get(newIndex).setValue(card.getValue());
+        }
+    }
+
+    private List<Card> StartCard() {
+        List<Card> playerCard = new ArrayList<>();
+        for (int i = 0; i < 7; i++) {
+
+            playerCard.add(cards.get(i));
+            cards.remove(i);
+        }
+        return playerCard;
+    }
 
 }
+
+
