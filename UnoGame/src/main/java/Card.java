@@ -1,26 +1,28 @@
 public class Card {
-    private static String value;
-    private static String color;
-    
+    private  String value;
+    private  String color;
+
+    Card(){
+    }
     public Card(String cardValue, String cardColor) {
         this.value = cardValue;
         this.color = cardColor;
     }
-    
-    public static void setValue(String value) {
-        Card.value = value;
+
+    public void setValue(String value) {
+        this.value = value;
     }
-    
-    public static getValue() {
+
+    public String getValue() {
         return value;
     }
-    
-    public static void setColor(String color) {
-        Card.color = color;
+
+    public void setColor(String color) {
+        this.color = color;
     }
-    
-    public getColor() {
+
+    public String getColor() {
         return color;
-}
-    
+    }
+
 }

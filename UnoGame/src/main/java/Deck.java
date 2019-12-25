@@ -1,8 +1,6 @@
 import java.util.*;
 
 public class Deck {
-
-    private List<Card> cards;
     private final Map<Integer, String> colors =
             Map.of(1, "red", 2, "blue", 3, "green", 4, "yellow");
 
@@ -10,6 +8,7 @@ public class Deck {
         cards = new ArrayList<>();
         for (String color : colors.values()) {
             MakingCards(cards, color);
+
             MakingSpecialCards(cards, color, Actions.ADD_TWO, "+2", 2);
             MakingSpecialCards(cards, color, Actions.SKIP_TURN, "Skip", 2);
             MakingSpecialCards(cards, color, Actions.REVERSE, "reverse", 2);
@@ -42,6 +41,7 @@ public class Deck {
     public List<Card> ShowCards() {
         return cards;
     }
+
 
     public void DrawCard(List<Card> playerCard) {
         playerCard.add(cards.get(0));
