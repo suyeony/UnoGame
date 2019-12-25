@@ -102,7 +102,7 @@ private static Deck deck = new Deck();
         }
         playerCards = deck.StartCard();
         //draw one cards
-        deck.DrawCard(playerCards);
+        deck.DrawCard(playerCards,1);
         //Print all my player's cards
         System.out.println(" ");
         System.out.println("person's cards");

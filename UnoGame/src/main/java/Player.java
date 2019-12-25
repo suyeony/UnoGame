@@ -18,11 +18,11 @@ public class Player {
         return name;
     }
 
-    public void setDeck(List<Card> cards) {
+    public void setCards(List<Card> cards) {
         this.cards = cards;
     }
 
-    public List<Card> getDeck() {
+    public List<Card> getCards() {
         return cards;
     }
 
