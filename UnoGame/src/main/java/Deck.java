@@ -19,15 +19,17 @@ public class Deck {
     }
 
 
-
+// TODO: remove
     public List<Card> ShowCards() {
         return cards;
     }
 
 
-    public void DrawCard(List<Card> playerCard) {
-        playerCard.add(cards.get(0));
-        cards.remove(0);
+    public void DrawCard(List<Card> playerCard, int times) {
+        for (int x = 0; x < times; x++) {
+            playerCard.add(cards.get(0));
+            cards.remove(0);
+        }
     }
 
     public void mixCard() {
