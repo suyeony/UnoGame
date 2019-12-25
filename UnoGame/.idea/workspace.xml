@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc4de1fe-3ccd-4928-9c36-845a6d65c33a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestDeck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Actions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Actions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Actions.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Actions.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Deck.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Deck.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +39,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunManager">
@@ -83,6 +82,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="240" y="46" key="#Project_Structure" timestamp="1577237922359">
+      <screen x="0" y="23" width="1280" height="716" />
+    </state>
+    <state x="240" y="46" key="#Project_Structure/0.23.1280.716@0.23.1280.716" timestamp="1577237922359" />
     <state x="402" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1576898172265">
       <screen x="0" y="23" width="1280" height="716" />
     </state>
@@ -139,15 +142,17 @@
     <state width="619" height="150" key="GridCell.Tab.1.right/0.23.1280.715@0.23.1280.715" timestamp="1577138388000" />
     <state width="619" height="564" key="GridCell.Tab.1.right/0.23.1280.716@0.23.1280.716" timestamp="1577145168215" />
     <state width="619" height="478" key="GridCell.Tab.1.right/0.23.1280.723@0.23.1280.723" timestamp="1577144298434" />
-    <state x="90" y="23" width="982" height="715" key="SettingsEditor" timestamp="1577135733834">
-      <screen x="0" y="23" width="1280" height="715" />
+    <state x="90" y="23" width="982" height="716" key="SettingsEditor" timestamp="1577238085520">
+      <screen x="0" y="23" width="1280" height="716" />
     </state>
     <state x="90" y="23" width="982" height="715" key="SettingsEditor/0.23.1280.715@0.23.1280.715" timestamp="1577135733834" />
+    <state x="90" y="23" width="982" height="716" key="SettingsEditor/0.23.1280.716@0.23.1280.716" timestamp="1577238085520" />
     <state x="149" y="24" key="SettingsEditor/0.23.1280.723@0.23.1280.723" timestamp="1576899999352" />
-    <state x="319" y="215" key="com.intellij.ide.util.TipDialog" timestamp="1576903704918">
-      <screen x="0" y="23" width="1280" height="724" />
+    <state x="319" y="214" key="com.intellij.ide.util.TipDialog" timestamp="1577235227511">
+      <screen x="0" y="23" width="1280" height="715" />
     </state>
     <state x="319" y="212" key="com.intellij.ide.util.TipDialog/0.23.1280.713@0.23.1280.713" timestamp="1576893473093" />
+    <state x="319" y="214" key="com.intellij.ide.util.TipDialog/0.23.1280.715@0.23.1280.715" timestamp="1577235227511" />
     <state x="319" y="214" key="com.intellij.ide.util.TipDialog/0.23.1280.721@0.23.1280.721" timestamp="1576894829242" />
     <state x="319" y="215" key="com.intellij.ide.util.TipDialog/0.23.1280.724@0.23.1280.724" timestamp="1576903704918" />
     <state x="298" y="23" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1577141247369">
