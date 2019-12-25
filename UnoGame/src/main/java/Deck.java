@@ -1,6 +1,7 @@
 import java.util.*;
 
 public class Deck {
+    private List<Card> cards;
     private final Map<Integer, String> colors =
             Map.of(1, "red", 2, "blue", 3, "green", 4, "yellow");
 
