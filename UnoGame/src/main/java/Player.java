@@ -1,11 +1,13 @@
+import java.util.List;
+
 public class Player {
     private  String name;
-    private  Deck deck;
+    private List<Card> cards;
     private  boolean turn;
 
-    Player(String name, Deck deck) {
+    Player(String name, List<Card> cards) {
         this.name = name;
-        this.deck = deck;
+        this.cards = cards;
     }
 
     public void setName(String name) {
@@ -16,12 +18,12 @@ public class Player {
         return name;
     }
 
-    public void setDeck(Deck deck) {
-        this.deck = deck;
+    public void setDeck(List<Card> cards) {
+        this.cards = cards;
     }
 
-    public Deck getDeck() {
-        return deck;
+    public List<Card> getDeck() {
+        return cards;
     }
 
     public void setTurn(boolean turn){

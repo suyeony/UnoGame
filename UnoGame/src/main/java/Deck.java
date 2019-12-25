@@ -30,7 +30,7 @@ public class Deck {
         cards.remove(0);
     }
 
-    public void mixCard(List<Card> cards) {
+    public void mixCard() {
         Random random = new Random();
         for (int i = 0; i < 108; i++) {
             int newIndex = i + random.nextInt(108 - i);
@@ -45,12 +45,12 @@ public class Deck {
         }
     }
 
-    private List<Card> StartCard() {
+    public List<Card> StartCard() {
         List<Card> playerCard = new ArrayList<>();
         for (int i = 0; i < 7; i++) {
 
-            playerCard.add(cards.get(i));
-            cards.remove(i);
+            playerCard.add(cards.get(0));
+            cards.remove(0);
         }
         return playerCard;
     }
