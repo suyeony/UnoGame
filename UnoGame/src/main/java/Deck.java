@@ -8,8 +8,7 @@ public class Deck {
     Deck() {
         cards = new ArrayList<>();
         for (String color : colors.values()) {
-            MakingCards(cards, color);
-
+            MakingCards(cards, color, Actions.NONE);
             MakingSpecialCards(cards, color, Actions.ADD_TWO, "+2", 2);
             MakingSpecialCards(cards, color, Actions.SKIP_TURN, "Skip", 2);
             MakingSpecialCards(cards, color, Actions.REVERSE, "reverse", 2);
@@ -19,11 +18,11 @@ public class Deck {
     }
 
 
-// TODO: remove
-    public List<Card> ShowCards() {
-        return cards;
+    public Card StartCard() {
+        Card card = cards.get(0);
+        cards.remove(0);
+        return card;
     }
-
 
     public void DrawCard(List<Card> playerCard, int times) {
         for (int x = 0; x < times; x++) {
@@ -40,14 +39,17 @@ public class Deck {
             Card card = new Card();
             card.setColor(cards.get(i).getColor());
             card.setValue(cards.get(i).getValue());
+            card.setActions(cards.get(i).getActions());
             cards.get(i).setValue(cards.get(newIndex).getValue());
             cards.get(i).setColor(cards.get(newIndex).getColor());
+            cards.get(i).setActions(cards.get(newIndex).getActions());
             cards.get(newIndex).setColor(card.getColor());
             cards.get(newIndex).setValue(card.getValue());
+            cards.get(newIndex).setActions(card.getActions());
         }
     }
 
-    public List<Card> StartCard() {
+    public List<Card> DealCards() {
         List<Card> playerCard = new ArrayList<>();
         for (int i = 0; i < 7; i++) {
 
@@ -56,10 +58,11 @@ public class Deck {
         }
         return playerCard;
     }
-    private void MakingCards(List<Card> cards, String color) {
+
+    private void MakingCards(List<Card> cards, String color, Actions action) {
         var y = 0;
         for (int index = 0; index < 19; index++, y++) {
-            var card = new Card(y + "", color);
+            var card = new Card(y + "", color, action);
             cards.add(card);
             if (y == 9) {
                 y = 0;
@@ -69,7 +72,7 @@ public class Deck {
 
     private void MakingSpecialCards(List<Card> cards, String color, Actions action, String value, int n) {
         for (int index = 0; index < n; index++) {
-            var specialCard = new SpecialCard();
+            var specialCard = new Card();
             specialCard.setColor(color);
             specialCard.setValue(value);
             specialCard.setActions(action);
